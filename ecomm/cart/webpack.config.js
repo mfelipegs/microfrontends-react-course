@@ -10,7 +10,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "cart",
       filename: "remoteEntry.js",
-      exposes: { "./CartIndex": "./src/index" },
+      exposes: { "./CartIndex": "./src/bootstrap" },
       shared: ["faker"],
     }),
     new HtmlWebpackPLugin({ template: "./public/index.html" }),
